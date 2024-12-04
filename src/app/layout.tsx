@@ -26,9 +26,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <div className='min-h-screen grid grid-cols-app'>
           <Sidebar />
 
@@ -36,7 +34,6 @@ export default function RootLayout({
             {children}
           </main>
         </div>
-
       </body>
     </html>
   );

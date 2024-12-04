@@ -1,6 +1,7 @@
 import { LifeBuoy, Search, Settings } from "lucide-react";
 import { Logo } from "./Logo";
 import { NaviItem } from "./NaviItem";
+import { Profile } from "./Profile";
 import { BarChart2, CheckSquare, Flag, Home, Layers2, Layers3, User, User2, User2Icon, UserCircle2, UserMinus2, UserPlus2, UsersIcon } from "lucide-react";
 import { UsedSpaceWidget } from "./UsedSpaceWidget";
 
@@ -24,13 +25,17 @@ export function Sidebar() {
                 <NaviItem title="Users" icon={UsersIcon} />
             </nav>
 
-            <div className="mt-auto flex flex-col gap-6 ">
+            <div className="mt-auto flex flex-col gap-6">
                 <nav className="space-y-0.5">
                     <NaviItem title="Suport" icon={LifeBuoy} />
                     <NaviItem title="Settings" icon={Settings} />
                 </nav>
 
                 <UsedSpaceWidget />
+
+                <div className="h-1 bg-zinc-200">
+                    <Profile /> 
+                </div>
             </div>
         </aside>
     )   
